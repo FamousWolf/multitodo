@@ -1,0 +1,6 @@
+.idea/
+.parcel-cache/
+node_modules/
+dist/multitodo.js
+dist/multitodo.js.map
+

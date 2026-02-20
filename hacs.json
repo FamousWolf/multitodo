@@ -1,0 +1,7 @@
+{
+  "name": "Multi todo card",
+  "content_in_root": false,
+  "render_readme": true,
+  "filename": "multitodo.js",
+  "homeassistant": "2026.1"
+}

@@ -7,3 +7,5 @@
 [![Static Badge](https://img.shields.io/badge/-buy_me_a_tea-gray?logo=buy-me-a-coffee)](https://www.buymeacoffee.com/rudygnodde)
 
 Custom Home Assistant card displaying a list of todo tasks from multiple entities
+
+![Example Week Planner Cards](images/example.png)

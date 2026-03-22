@@ -41,9 +41,7 @@ export class MultitodoCard extends LitElement {
     static getStubConfig() {
         return {
             entities: [],
-            overdueDays: 1,
             overdueColor: 'red',
-            dueDays: 0,
             dueColor: 'orange',
             almostDueDays: 3,
             almostDueColor: 'yellow',

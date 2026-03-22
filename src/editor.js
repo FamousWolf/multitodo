@@ -66,6 +66,12 @@ export class MultitodoCardEditor extends LitElement {
                     `
                 )}
                 ${this.addExpansionPanel(
+                    'Appearance',
+                    html`
+                        ${this.addTextField('columns', 'Number of columns', 'number', 1)}
+                    `
+                )}
+                ${this.addExpansionPanel(
                     'Due date',
                     html`
                         ${this.addTextField('overDueColor', 'Overdue color', 'text', 'red')}

@@ -55,18 +55,20 @@ Custom Home Assistant card displaying a list of todo tasks from multiple entitie
 |-----------------|-------------|--------------|--------------------------------------|-------------------------------------------------------|---------|
 | type            | string      | **Required** | `custom:multitodo-card`              | Type of the card                                      | 0.9.0   |
 | entities        | object list | **Required** | See [Entities](#entities)            | Entities shown in the card                            | 0.9.0   |
-| overDueColor    | string      | red          | Any CSS color                        | Color for overdue items                               | 0.9.0   |
-| dueColor        | string      | orange       | Any CSS color                        | Color for due items                                   | 0.9.0   |
+| columns         | number      | 1            | Any positive integer number          | Number of columns to show                             | 1.0.0   |
+| overDueColor    | string      | `red`        | Any CSS color                        | Color for overdue items                               | 0.9.0   |
+| dueColor        | string      | `orange`     | Any CSS color                        | Color for due items                                   | 0.9.0   |
 | almostDueDays   | number      | 3            | Any integer number                   | Number of days for an item to be marked as almost due | 0.9.0   |
-| almostDueColor  | string      | yellow       | Any CSS color                        | Color for almost due items                            | 0.9.0   |
-| sorting         | string      | due desc     | `due asc` \| `due desc` \| `summary` | Sorting                                               | 0.9.0   |
-| completedBottom | boolean     | true         | `false` \| `true`                    | Completed items at the bottom                         | 0.9.0   |
-| hideOverdue     | boolean     | false        | `false` \| `true`                    | Hide overdue items                                    | 0.9.0   |
-| hideDue         | boolean     | false        | `false` \| `true`                    | Hide due items                                        | 0.9.0   |
-| hideAlmostDue   | boolean     | false        | `false` \| `true`                    | Hide almost due items                                 | 0.9.0   |
-| hideNotDue      | boolean     | false        | `false` \| `true`                    | Hide not due items                                    | 0.9.0   |
-| hideNoDueDate   | boolean     | false        | `false` \| `true`                    | Hide items without due date                           | 0.9.0   |
-| hideCompleted   | boolean     | false        | `false` \| `true`                    | Hide completed items                                  | 0.9.0   |
+| almostDueColor  | string      | `yellow`     | Any CSS color                        | Color for almost due items                            | 0.9.0   |
+| sorting         | string      | `due desc`   | `due asc` \| `due desc` \| `summary` | Sorting                                               | 0.9.0   |
+| completedBottom | boolean     | `true`       | `false` \| `true`                    | Completed items at the bottom                         | 0.9.0   |
+| hideOverdue     | boolean     | `false`      | `false` \| `true`                    | Hide overdue items                                    | 0.9.0   |
+| hideDue         | boolean     | `false`      | `false` \| `true`                    | Hide due items                                        | 0.9.0   |
+| hideAlmostDue   | boolean     | `false`      | `false` \| `true`                    | Hide almost due items                                 | 0.9.0   |
+| hideNotDue      | boolean     | `false`      | `false` \| `true`                    | Hide not due items                                    | 0.9.0   |
+| hideNoDueDate   | boolean     | `false`      | `false` \| `true`                    | Hide items without due date                           | 0.9.0   |
+| hideCompleted   | boolean     | `false`      | `false` \| `true`                    | Hide completed items                                  | 0.9.0   |
+| locale          | string      | optional     | Any valid locale                     | Locale used for date texts                            | 0.9.0   |
 
 ### Entities
 

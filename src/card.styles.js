@@ -4,6 +4,7 @@ export default css`
     ha-card {
       border: none;
       background-color: transparent;
+      --item-columns: 2;
     }
     
     div.card-content {
@@ -30,7 +31,7 @@ export default css`
     }
   
     ul.items li {
-      width: 100%;
+      width: calc(100% / var(--item-columns) - var(--ha-space-2) * (var(--item-columns) - 1));
       background: var(--ha-card-background, var(--card-background-color, #fff));
       backdrop-filter: var(--ha-card-backdrop-filter, none);
       box-shadow: var(--ha-card-box-shadow, none);

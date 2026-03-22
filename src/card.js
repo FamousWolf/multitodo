@@ -287,7 +287,7 @@ export class MultitodoCard extends LitElement {
                         <ul class="items">
                             ${items.map(item => this.renderItem(item))}
                         </ul>
-                        ` : `
+                        ` : html`
                         <div class="noitems">
                             No items
                         </div>

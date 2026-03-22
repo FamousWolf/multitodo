@@ -7,6 +7,7 @@ export class MultitodoCard extends LitElement {
 
     _initialized = false;
     _entities = {};
+    _columns = 1;
     _dueColors = {};
     _almostDueDays = 3;
     _sorting = 'due asc';
@@ -41,6 +42,7 @@ export class MultitodoCard extends LitElement {
     static getStubConfig() {
         return {
             entities: [],
+            columns: 1,
             overdueColor: 'red',
             dueColor: 'orange',
             almostDueDays: 3,
@@ -84,6 +86,7 @@ export class MultitodoCard extends LitElement {
         if (config.locale) {
             LuxonSettings.defaultLocale = config.locale;
         }
+        this._columns = config.columns ?? 1;
         this._dueColors = {
             overdue: config.overdueColor ?? 'red',
             due: config.dueColor ?? 'orange',
@@ -278,7 +281,7 @@ export class MultitodoCard extends LitElement {
         const items = this.sortedAndFilteredItems;
 
         return html`
-            <ha-card class="multitodo">
+            <ha-card class="multitodo" style="--item-columns: ${this._columns}">
                 <div class="card-content">
                     ${items.length > 0 ? html`
                         <ul class="items">
